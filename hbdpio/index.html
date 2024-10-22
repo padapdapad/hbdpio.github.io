@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+        /* CSS Anda di sini */
+    </style>
+</head>
+<body>
+    <button id="showMessage">Ada Pesan Buat Kamu</button>
+    <div id="birthdayMessage" style="display:none;">
+        <h1>Happy Birthday Nissa!</h1>
+    </div>
+    <audio id="birthdaySong" src="path/to/your/song.mp3"></audio>
+
+    <script>
+        document.getElementById('showMessage').onclick = function() {
+            document.getElementById('birthdayMessage').style.display = 'block';
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
